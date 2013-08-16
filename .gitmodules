@@ -1,0 +1,3 @@
+[submodule "RdioSdkBindings"]
+	path = RdioSdkBindings
+	url = https://github.com/bduncavage/RdioSdkBindings.git

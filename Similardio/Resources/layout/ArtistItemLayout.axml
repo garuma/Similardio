@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="240dp"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants">
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/artistImageLoading"
+        android:layout_marginBottom="12dp"
+        android:visibility="visible" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ArtistBgImage"
+        android:scaleType="centerCrop"
+        android:visibility="invisible" />
+    <TextView
+        android:text="100%"
+        android:layout_width="32dp"
+        android:layout_height="18dp"
+        android:id="@+id/ArtistScore"
+        android:textColor="#fff4f4f4"
+        android:shadowColor="#ff000000"
+        android:shadowRadius="0.1"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:textSize="10dp"
+        android:background="@drawable/RateBackground"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom"
+        android:background="#d0000000"
+        android:id="@+id/ArtistDrawer"
+        android:translationY="208dp">
+        <TextView
+            android:text="Edguy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistName"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="8dp"
+            android:textColor="#ffffffff"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/transparent"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/questionBtn"
+                android:scaleType="fitXY"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+            <TextView
+                android:text="Similar Artists in your Library"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/libraryHeaderText"
+                android:textColor="#ffffffff"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:textAllCaps="true"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/similarArtistsList"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/LoadingBackground"
+    android:id="@+id/containerFrame">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity="center"
+        android:translationY="-38dp">
+        <ImageView
+            android:src="@drawable/rdio_logo"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:id="@+id/logoImage"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="Fetching Rdio Artists"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/explText"
+            android:textColor="#ff4a4a4a"
+            android:shadowColor="#30000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp" />
+        <TextView
+            android:visibility="invisible"
+            android:text="(will need more time to login)"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/extraExpl"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:textSize="11sp"
+            android:textColor="#ff717171" />
+    </LinearLayout>
+</FrameLayout>
