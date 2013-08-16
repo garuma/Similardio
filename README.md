@@ -5,7 +5,7 @@ Similardio
 
 #### What?
 
-An experiment in bridging [Rdio](http://www.rdio.com/) and [Lastfm](http://www.rdio.com/) together.
+An experiment in bridging [Rdio](http://www.rdio.com/) and [Lastfm](http://last.fm/) together.
 
 The idea is to gather your most listened to artists on Rdio and generously gather similar talents from Lastfm comprehensive database.
 
