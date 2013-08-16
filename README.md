@@ -1,7 +1,7 @@
 Similardio
 ==========
 
-![Similardio logo](http://neteril.org/xamarin/logo_similardio.png)
+![Similardio logo](http://neteril.org/xamarin/logo_similardio2.png)
 
 #### What?
 
