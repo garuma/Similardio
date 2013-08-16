@@ -20,3 +20,8 @@ It has pretty animations. It has blurring. It has large images.
 #### What should I do with it
 
 Use it as an example for [bduncavage/RdioSdkBindings](https://github.com/bduncavage/RdioSdkBindings) or scavenge any other part of it.
+
+<a href="https://play.google.com/store/apps/details?id=org.neteril.Similardio">
+  <img alt="Android app on Google Play"
+       src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
+</a>
