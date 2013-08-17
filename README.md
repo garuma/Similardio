@@ -17,6 +17,8 @@ It has pretty animations. It has blurring. It has large images.
 
 ![Similardio logo](http://neteril.org/xamarin/fresque.png)
 
+A video of the app working is on [the blog post](http://blog.neteril.org/blog/2013/08/16/similardio-rdio-meets-lastfm/).
+
 #### What should I do with it
 
 Use it as an example for [bduncavage/RdioSdkBindings](https://github.com/bduncavage/RdioSdkBindings) or scavenge any other part of it.
