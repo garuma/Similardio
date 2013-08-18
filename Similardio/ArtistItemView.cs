@@ -125,17 +125,22 @@ namespace Similardio
 
 		Bitmap BlurImage (Bitmap input)
 		{
-			var rsScript = RenderScript.Create (Context);
-			var alloc = Allocation.CreateFromBitmap (rsScript, input);
-			var blur = ScriptIntrinsicBlur.Create (rsScript, alloc.Element);
-			blur.SetRadius (12);
-			blur.SetInput (alloc);
-			var result = Bitmap.CreateBitmap (input.Width, input.Height, input.GetConfig ());
-			var outAlloc = Allocation.CreateFromBitmap (rsScript, result);
-			blur.ForEach (outAlloc);
-			outAlloc.CopyTo (result);
-			rsScript.Destroy ();
-			return result;
+			try {
+				var rsScript = RenderScript.Create (Context);
+				var alloc = Allocation.CreateFromBitmap (rsScript, input);
+				var blur = ScriptIntrinsicBlur.Create (rsScript, alloc.Element);
+				blur.SetRadius (12);
+				blur.SetInput (alloc);
+				var result = Bitmap.CreateBitmap (input.Width, input.Height, input.GetConfig ());
+				var outAlloc = Allocation.CreateFromBitmap (rsScript, result);
+				blur.ForEach (outAlloc);
+				outAlloc.CopyTo (result);
+				rsScript.Destroy ();
+				return result;
+			} catch (Exception e) {
+				Log.Error ("Blurrer", "Error while trying to blur, fallbacking. " + e.ToString ());
+				return input;
+			}
 		}
 
 		public async void SetBlurry (bool blur)
